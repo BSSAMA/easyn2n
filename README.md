@@ -13,7 +13,7 @@ docker run --name easyn2n -d -p 1020:1020/udp bssama/easyn2n
 ## 创建镜像
 若要自定义端口和小组名称，请修改Dockerfile文件 <br>
 修改端口请将EXPOSE后的'1020'修改为自定义的端口 <br>
-修改启动命令请将CMD后的命令修改为想要的启动命令 <br>
+修改启动命令请将CMD后的命令修改为想要的启动命令，详细请参考下面的附加参数 <br>
 在Dockerfile的目录下执行镜像构建命令 <br>
 ```
 docker build -t easyn2n .
