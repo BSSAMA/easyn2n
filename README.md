@@ -12,14 +12,15 @@ docker run --name easyn2n -d -p 1020:1020/udp bssama/easyn2n
 宿主机需开放udp 1020端口
 ## 创建镜像
 若要自定义端口和小组名称，请修改Dockerfile文件 <br>
-修改端口请将EXPOSE后的'1020'修改为自定义的端口 <br>
-修改启动命令请将CMD后的命令修改为想要的启动命令，详细请参考下面的附加参数 <br>
-在Dockerfile的目录下执行镜像构建命令 <br>
+1.修改端口请将EXPOSE后的'1020'修改为自定义的端口 <br>
+2.修改启动命令请将CMD后的命令修改为想要的启动命令，详细请参考下面的附加参数 <br>
+3.在Dockerfile的目录下执行镜像构建命令 <br>
 ```
 docker build -t easyn2n .
 ```
 请注意，命令的最后有一个'.' <br>
 easyn2n是镜像名 <br>
+之后使用自定义的镜像创建docker容器
 ## EasyN2N 服务端（Supernode）附加参数 <br>
 -p 端口 | Supernode监听端口，默认 7654 <br>
 -F federation名称 | supernode federation名称，默认为 *Federation <br>
