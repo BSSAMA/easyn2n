@@ -20,7 +20,7 @@ docker build -t easyn2n .
 ```
 请注意，命令的最后有一个'.' <br>
 easyn2n是镜像名 <br>
-之后使用自定义的镜像创建docker容器
+之后使用自定义的镜像创建docker容器 <br>
 ## EasyN2N 服务端（Supernode）附加参数 <br>
 -p 端口 | Supernode监听端口，默认 7654 <br>
 -F federation名称 | supernode federation名称，默认为 *Federation <br>
