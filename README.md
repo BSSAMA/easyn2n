@@ -15,4 +15,4 @@ docker run --name easyn2n -d -p 1021:1021/udp bssama/easyn2n
 ```
 docker run --name easyn2n -d -p 端口号:1021/udp -e "cname=小组名称" bssama/easyn2n
 ```
-例如: 端口号->8080,小组名称->123456
+例如: “端口号”替换为-->“8080”,“小组名称”替换为-->“123456”
