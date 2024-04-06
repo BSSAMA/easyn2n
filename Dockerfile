@@ -1,11 +1,11 @@
-FROM centos:7
+FROM debian:buster
 
 ENV cname=121233
 
 RUN  cd /root && \
-     yum install make -y && \
-     yum install wget -y && \
-     yum install autoconf automake libtool git kernel-headers -y && \
+     apt-get update && \
+     apt-get install wget -y && \
+     apt-get install autoconf make gcc -y && \
      wget https://github.com/ntop/n2n/archive/refs/tags/3.0.tar.gz && \
      tar xzvf 3.0.tar.gz
 
